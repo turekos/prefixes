@@ -1,0 +1,105 @@
+/* ------------Project classes-------------- */
+.uppercase{
+	text-transform: uppercase;
+}
+.font-title{
+	font-family: 'robotobold';
+}
+.font-text{
+	font-family: 'open_sansregular';
+}
+.border{
+	border: 1px solid red;
+}
+.flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+/* ------------------------------------------ */
+.pr-tabs,
+.pr-tabs-content{
+	border: none;
+}
+body,
+.pr-tabs{ 
+	background-color: #F4F4F4;
+}
+/* ----------navigation------------------ */
+.pr-tabs{
+	padding: 2% 0 2% 0;
+}
+.pr-tabs-title{
+	padding: 0 1.5rem 0 1.5rem;
+}
+.pr-tabs-title a{
+	color: #000000;
+	font-weight: bold;
+
+}
+
+.pr-tabs-title > a:hover {
+  background: #F4F4F4;
+  cursor: pointer;
+  /* transform: scale(1.1);
+  transition:  1s; */
+ }
+ .pr-tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+  background: #F4F4F4;
+  color: #FB527A; /*!!!!!!!!!!!!!!!!!змінити*/
+  border-bottom: 4px solid #FB527A;
+
+
+}
+/* ------------------------------------------ */
+
+/* -------------tabs container style------------------- */
+.pr-tabs-content{
+	min-height: 600px;
+	border-radius: 10px;
+	/* box-shadow: inset 0 0 20px rgba(0,0,0,1) ; */
+}
+/* ---------------------------------------------------- */
+/* --------------tabs styles--------------------------- */
+.pr-tabs-panel{
+	padding: 0;
+}
+.pr-left-side-container,
+.pr-right-side-container{
+	transition: 2s;
+}
+/* .pr-left-side-container__img{
+	margin-top: 10%;
+} */ /*додати до медіа на малому екрані*/
+.pr-left-side-container{
+	justify-content: center;
+	align-items: center;
+}
+
+.pr-right-side-container__number{
+	font-size: 55px;
+	/* color: #E9E9E9; */
+	color: #FB527A;
+	display: block; 
+	margin-top: 10%;
+}
+
+.pr-right-side-container__list li{
+	list-style: none;
+}
+.pr-right-side-container__list li:before {
+    content:  "—";
+    position: relative;
+    left: -5px;
+}
+
+
+
+/* ------------------------------------------------------- */
+
+
