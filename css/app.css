@@ -7,9 +7,11 @@
   font-family: "robotobold";
 }
 
-.font-text {
+/* .font-text {
   font-family: "open_sansregular";
-}
+} */
+
+
 
 .border {
   border: 1px solid red;
@@ -49,6 +51,10 @@ h1 {
 h1,
 h2 {
   line-height: 1;
+}
+
+p {
+  font-family: "open_sansregular";
 }
 
 /* ----------navigation------------------ */
