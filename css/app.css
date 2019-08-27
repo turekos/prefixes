@@ -1,105 +1,115 @@
 /* ------------Project classes-------------- */
-.uppercase{
-	text-transform: uppercase;
+.uppercase {
+  text-transform: uppercase;
 }
-.font-title{
-	font-family: 'robotobold';
+.font-title {
+  font-family: "robotobold";
 }
-.font-text{
-	font-family: 'open_sansregular';
+.font-text {
+  font-family: "open_sansregular";
 }
-.border{
-	border: 1px solid red;
+.border {
+  border: 1px solid red;
 }
-.flex{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
+.flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
-.flex-wrap{
-	flex-wrap: wrap;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 /* ------------------------------------------ */
 .pr-tabs,
-.pr-tabs-content{
-	border: none;
+.pr-tabs-content {
+  border: none;
 }
 body,
-.pr-tabs{ 
-	background-color: #F4F4F4;
+.pr-tabs {
+  background-color: #f4f4f4;
 }
 /* ----------navigation------------------ */
-.pr-tabs{
-	padding: 2% 0 2% 0;
+.pr-tabs {
+  padding: 2% 0 2% 0;
 }
-.pr-tabs-title{
-	padding: 0 1.5rem 0 1.5rem;
+.pr-tabs-title {
+  padding: 0 1.5rem 0 1.5rem;
 }
-.pr-tabs-title a{
-	color: #000000;
-	font-weight: bold;
-
+.pr-tabs-title a {
+  color: #000000;
+  font-weight: bold;
 }
 
 .pr-tabs-title > a:hover {
-  background: #F4F4F4;
+  background: #f4f4f4;
   cursor: pointer;
-  /* transform: scale(1.1);
-  transition:  1s; */
- }
- .pr-tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
-  background: #F4F4F4;
-  color: #FB527A; /*!!!!!!!!!!!!!!!!!змінити*/
-  border-bottom: 4px solid #FB527A;
-
-
+}
+.pr-tabs-title > a:focus,
+.tabs-title > a[aria-selected="true"] {
+  background: #f4f4f4;
+  color: #fb527a; /*!!!!!!!!!!!!!!!!!змінити*/
+  border-bottom: 4px solid #fb527a;
 }
 /* ------------------------------------------ */
 
 /* -------------tabs container style------------------- */
-.pr-tabs-content{
-	min-height: 600px;
-	border-radius: 10px;
-	/* box-shadow: inset 0 0 20px rgba(0,0,0,1) ; */
+.pr-tabs-content {
+  min-height: 500px;
+  border-radius: 10px;
 }
 /* ---------------------------------------------------- */
 /* --------------tabs styles--------------------------- */
-.pr-tabs-panel{
-	padding: 0;
+.pr-tabs-panel {
+  padding: 0;
 }
-.pr-left-side-container,
-.pr-right-side-container{
-	transition: 2s;
-}
-/* .pr-left-side-container__img{
-	margin-top: 10%;
-} */ /*додати до медіа на малому екрані*/
-.pr-left-side-container{
-	justify-content: center;
-	align-items: center;
+.pr-right-side-container {
+  /* transition: 2s; */
 }
 
-.pr-right-side-container__number{
-	font-size: 55px;
-	/* color: #E9E9E9; */
-	color: #FB527A;
-	display: block; 
-	margin-top: 10%;
+.pr-left-side-container {
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
 }
 
-.pr-right-side-container__list li{
-	list-style: none;
-}
-.pr-right-side-container__list li:before {
-    content:  "—";
-    position: relative;
-    left: -5px;
+.pr-right-side-container__number {
+  font-size: 55px;
+  color: #fb527a;
+  display: block;
+  margin-top: 10%;
 }
 
+.pr-right-side-container__list li {
+  list-style: disc;
+}
 
-
+.pr-right-sie-container_subtitle {
+  /* font-size: 2em; */
+}
+.pr-right-side-container__title{
+  line-height: 0.9;
+}
+p{
+  text-indent: 10px;
+}
+.red_block{
+  color: rgb(196,65,45);
+}
+.green_block{
+  color: rgb(58,179,73);
+}
+.olive_block{
+  color: rgb(137, 157, 0);
+}
 /* ------------------------------------------------------- */
-
-
+@media screen and (max-width: 39.99875em) {
+  .pr-left-side-container__img{
+    margin-top: 10%;
+  }
+  .pr-right-side-container,
+  .pr-left-side-container{
+   min-height: 200px;
+  }
+ 
