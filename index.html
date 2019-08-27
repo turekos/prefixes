@@ -1,155 +1,171 @@
 <!doctype html>
 <html class="no-js" lang="uk" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prefixes</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="shortcut icon" href="icon/favicon2.ico" type="image/x-icon">
-    <link rel="icon" href="icon/favicon2.ico" type="image/x-icon">
-  </head>
-  <body>
 
-    <nav id="services-tabs">
-      <ul class="pr-tabs tabs row align-center uppercase " data-tabs id="example-tabs">
-        <li class="pr-tabs-title tabs-title is-active"><a href="#panel1" aria-selected="true">причини виникнення</a></li>
-        <li class="pr-tabs-title tabs-title"><a data-tabs-target="panel2" href="#panel2">Що таке префікси</a></li>
-        <li class="pr-tabs-title tabs-title"><a data-tabs-target="panel3" href="#panel3">Автопрефіксери</a></li>
-        <li class="pr-tabs-title tabs-title"><a data-tabs-target="panel4" href="#panel4">Як використовувати</a></li>
-        <li class="pr-tabs-title tabs-title"><a data-tabs-target="panel5" href="#panel5">Чи потрібно це мені?</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prefixes</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="shortcut icon" href="icon/favicon2.ico" type="image/x-icon">
+  <link rel="icon" href="icon/favicon2.ico" type="image/x-icon">
+</head>
 
-    <main>
+<body>
 
+  <nav id="services-tabs">
+    <ul class="pr-tabs tabs row align-center uppercase " data-tabs id="example-tabs">
+      <li class="pr-tabs-title tabs-title is-active"><a href="#panel1" aria-selected="true">причини виникнення</a></li>
+      <li class="pr-tabs-title tabs-title"><a data-tabs-target="panel2" href="#panel2">Що таке префікси</a></li>
+      <li class="pr-tabs-title tabs-title"><a data-tabs-target="panel3" href="#panel3">Автопрефіксери</a></li>
+      <li class="pr-tabs-title tabs-title"><a data-tabs-target="panel4" href="#panel4">Як використовувати</a></li>
+      <li class="pr-tabs-title tabs-title"><a data-tabs-target="panel5" href="#panel5">Чи потрібно це мені?</a></li>
+    </ul>
+  </nav>
 
+  <main>
 
+    <div class="pr-tabs-content tabs-content row" data-tabs-content="example-tabs">
 
-      <div class="pr-tabs-content tabs-content row" data-tabs-content="example-tabs">
+      <!-- Panel 1 -->
+      <div class="pr-tabs-panel tabs-panel is-active " id="panel1">
 
-        <!-- Panel 1 -->
-        <div class="pr-tabs-panel tabs-panel is-active " id="panel1">
-
-          <div class=" wrapper flex flex-wrap">
-            <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
-              <img src="img/pref1.png" alt="prefixes-photo" class="pr-left-side-container__img">
-            </div>
-
-            <div class="column pr-right-side-container large-6 medium-6 small-12">
-              <span class="pr-right-side-container__number font-title">01.</span>
-              <h1 class="pr-right-side-container__title  font-title">Причини виникнення</h1>
-              <p class="pr-right-side-container__text ">Причин для появи префіксів було декілька:
-                <ul class="pr-right-side-container__list">
-                  <li>Для включення в браузер експериментальних властивостей CSS, які стандартом ще не затверджені. Таким чином, виробники браузерів проводять тестування і вносять пропозиції перед затвердженням властивостей CSS в стандарті.</li>
-                  <li>Для вирішення проблем з кросбраузерністю.</li>
-                  <li> Для створення власних властивостей, які не входять до стандартів CSS, але можливо з'являться в ньому через деякий час.</li>
-                </ul></p>
-                <p>Коли експериментальнa властивість затверджена в стандарті і пройшлa тестування в браузері, у неї зазвичай забирається префікс.</p>
-            </div>
+        <div class=" wrapper flex flex-wrap">
+          <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
+            <img src="img/pref1.png" alt="prefixes-photo" class="pr-left-side-container__img">
           </div>
 
-        </div>
-
-
-
-
-
-
-
-
-
-
-        <!-- Panel 2 -->
-        <div class="pr-tabs-panel tabs-panel" id="panel2">
-
-          <div class=" wrapper flex flex-wrap">
-            <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
-              <img src="img/pref1.png" alt="-photo" class="pr-left-side-container__img">
-            </div>
-
-            <div class="column pr-right-side-container large-6 medium-6 small-12">
-              <span class="pr-right-side-container__number font-title">02.</span>
-              <h1 class="pr-right-side-container__title  font-title">Що таке префікси</h1>
-              <p class="pr-right-side-container__text ">Що ж це таке? Насправді все просто, ці незрозумілі слова є префіксами наступних браузерів:
-
-                <ul class="pr-right-side-container__list">
-                  <li>-webkit-: браузери Chrome, Safari, Opera;</li>
-                  <li>-moz-: браузер Mozilla Firefox;</li>
-                  <li>-ms-: браузер Internet Explorer.</li>
-                  <li>-o-: для старшої версії браузера Opera (можна сміливо ігнорувати цей префікс, оскільки кількість користувачів, які використовують цей браузер, дуже мала)</li>
-                </ul></p>
-                <p>Таким чином, якщо перед назвою властивості є певний префікс, то це означає, що дана властивість реалізована і буде застосовуватися виключно в зазначеному браузері. Всі інші браузери дану властивість ігноруватимуть, тому що для них цей префікс невідомий.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Panel 3 -->
-        <div class="pr-tabs-panel tabs-panel" id="panel3">
-
-          <div class=" wrapper flex flex-wrap">
-            <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
-              <img src="img/pref1.png" alt="-photo" class="pr-left-side-container__img">
-            </div>
-
-            <div class="column pr-right-side-container large-6 medium-6 small-12">
-              <span class="pr-right-side-container__number font-title">03.</span>
-              <h1 class="pr-right-sie-container__title  font-title">Автопрефіксери</h1>
-              <p class="pr-right-side-container__text "> Автопрефіксер - утиліта для додавання префіксів до експериментальних властивостей в CSS3. Вона бере з <a href="https://caniuse.com/" target="_blank">Can I Use</a> останні дані про префіксах і популярності браузерів, читає ваш файл стилів, знаходить властивості і значення, яким дійсно потрібні префікси і автоматично додає їх.</p>
-              <h2 class="pr-right-sie-container_subtitle  font-title">Найпопулярніші автопрефіксери</h2>
-              <ul>
-                <li><a href="http://leaverou.github.io/prefixfree/" target="_blank">-prefix-free</a></li>
-                <li><a href="http://prefixr.com/" target="_blank">prefixr</a></li>
-                <li><a href="https://autoprefixer.github.io/" target="_blank">autoprefixer</a></li>
+          <div class="column pr-right-side-container large-6 medium-6 small-12">
+            <span class="pr-right-side-container__number font-title">01.</span>
+            <h1 class="pr-right-side-container__title  font-title">Причини виникнення</h1>
+            <p class="pr-right-side-container__text ">Причин для появи префіксів було декілька:
+              <ul class="pr-right-side-container__list">
+                <li>Для включення в браузер експериментальних властивостей CSS, які стандартом ще не затверджені. Таким
+                  чином, виробники браузерів проводять тестування і вносять пропозиції перед затвердженням властивостей
+                  CSS в стандарті.</li>
+                <li>Для вирішення проблем з кросбраузерністю.</li>
+                <li> Для створення власних властивостей, які не входять до стандартів CSS, але можливо з'являться в
+                  ньому через деякий час.</li>
               </ul>
-            </div>
+            </p>
+            <p>Коли експериментальнa властивість затверджена в стандарті і пройшлa тестування в браузері, у неї зазвичай
+              забирається префікс.</p>
           </div>
         </div>
-        <!-- Panel 4 -->
-        <div class="pr-tabs-panel tabs-panel" id="panel4">
 
-          <div class=" wrapper flex flex-wrap">
-            <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
-              <img src="img/canIUse.jpg" alt="-photo" class="pr-left-side-container__img">
-            </div>
-            <div class="column pr-right-side-container large-6 medium-6 small-12">
-              <span class="pr-right-side-container__number font-title">04.</span>
-              <h1 class="pr-right-side-container__title  font-title">Як використовувати</h1>
-              <p class="pr-right-side-container__text ">Є два шляхи:<br>
-                1. Встановити до редактору коду один з автопрефіксерів, про які вже розповіли на попередній закладці.<br>
-                2. На офіційній сторінці <a href="https://https://caniuse.com/" target="_blank">Can I Use</a> впишемо, наприклад властивість "grid". <span class="red_block">Червоним</span> кольором будуть зазначені браузери та їх версії, котрі не підтримують дану властивість.<span class="green_block">Зеленим</span>  кольором будуть зазначені браузери та їх версії, котрі повністю підтримують дану властивість. <span class="olive_block">Оливковим</span> кольором будуть зазначені браузери та їх версії, котрі повністю підтримують дану властивість з відповідним префіксом. Наприклад для IE Mobile 11 потрібно буде прописати "display: -ms-grid;".
-              </p>
-            </div>
+      </div>
+
+      <!-- Panel 2 -->
+      <div class="pr-tabs-panel tabs-panel" id="panel2">
+
+        <div class=" wrapper flex flex-wrap">
+          <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
+            <img src="img/pref1.png" alt="-photo" class="pr-left-side-container__img">
           </div>
-        </div>
-         <!-- Panel 5 -->
-        <div class="pr-tabs-panel tabs-panel" id="panel5">
 
-          <div class=" wrapper flex flex-wrap">
-            <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
-              <img src="img/pref1.png" alt="-photo" class="pr-left-side-container__img">
-            </div>
+          <div class="column pr-right-side-container large-6 medium-6 small-12">
+            <span class="pr-right-side-container__number font-title">02.</span>
+            <h1 class="pr-right-side-container__title  font-title">Що таке префікси</h1>
+            <p class="pr-right-side-container__text ">Що ж це таке? Насправді все просто, ці незрозумілі слова є
+              префіксами наступних браузерів:
 
-            <div class="column pr-right-side-container large-6 medium-6 small-12">
-              <span class="pr-right-side-container__number font-title">05.</span>
-              <h1 class="pr-right-side-container__title  font-title">В яких випадках використовувати префікси</h1>
-              <p class="pr-right-side-container__text ">Використовуйте їх, якщо браузери ще не підтримують версію без префікса. Ви можете дізнатися, чи підтримує браузер його, відвідавши сайт, наприклад <a href="https://https://caniuse.com/" target="_blank">Can I Use</a> або <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">Mozilla MDN.</a></p>
-              <p>На жаль, для розробників браузери реалізують функції в різний час і в різних замовленнях, все з різним рівнем підтримки. Це означає, що нам завжди потрібно знати поточні рівні реалізації для функцій, які ми хочемо використовувати</p>
-            </div>
+              <ul class="pr-right-side-container__list">
+                <li>-webkit-: браузери Chrome, Safari, Opera;</li>
+                <li>-moz-: браузер Mozilla Firefox;</li>
+                <li>-ms-: браузер Internet Explorer.</li>
+                <li>-o-: для старшої версії браузера Opera (можна сміливо ігнорувати цей префікс, оскільки кількість
+                  користувачів, які використовують цей браузер, дуже мала)</li>
+              </ul>
+            </p>
+            <p>Таким чином, якщо перед назвою властивості є певний префікс, то це означає, що дана властивість
+              реалізована і буде застосовуватися виключно в зазначеному браузері. Всі інші браузери дану властивість
+              ігноруватимуть, тому що для них цей префікс невідомий.</p>
           </div>
         </div>
       </div>
 
 
+      <!-- Panel 3 -->
+      <div class="pr-tabs-panel tabs-panel" id="panel3">
+
+        <div class=" wrapper flex flex-wrap">
+          <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
+            <img src="img/autoprefixes.png" alt="-photo" class="pr-left-side-container__img">
+          </div>
+
+          <div class="column pr-right-side-container large-6 medium-6 small-12">
+            <span class="pr-right-side-container__number font-title">03.</span>
+            <h1 class="pr-right-sie-container__title  font-title">Автопрефіксери</h1>
+            <p class="pr-right-side-container__text "> Автопрефіксер - утиліта для додавання префіксів до
+              експериментальних властивостей в CSS3. Вона бере з <a href="https://caniuse.com/" target="_blank">Can I
+                Use</a> останні дані про префіксах і популярності браузерів, читає ваш файл стилів, знаходить
+              властивості і значення, яким дійсно потрібні префікси і автоматично додає їх.</p>
+            <h2 class="pr-right-sie-container_subtitle  font-title">Найпопулярніші автопрефіксери</h2>
+            <ul>
+              <li><a href="http://leaverou.github.io/prefixfree/" target="_blank">-prefix-free</a></li>
+              <li><a href="http://prefixr.com/" target="_blank">prefixr</a></li>
+              <li><a href="https://autoprefixer.github.io/" target="_blank">autoprefixer</a></li>
+              <li><a href="https://www.npmjs.com/package/gulp-autoprefixer" target="_blank">gulp-autoprefixer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Panel 4 -->
+      <div class="pr-tabs-panel tabs-panel" id="panel4">
+
+        <div class=" wrapper flex flex-wrap">
+          <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
+            <img src="img/canIUse.jpg" alt="-photo" class="pr-left-side-container__img">
+          </div>
+          <div class="column pr-right-side-container large-6 medium-6 small-12">
+            <span class="pr-right-side-container__number font-title">04.</span>
+            <h1 class="pr-right-side-container__title  font-title">Як використовувати</h1>
+            <p class="pr-right-side-container__text ">Є два шляхи:<br>
+              1. Встановити до редактору коду один з автопрефіксерів, про які вже розповіли на попередній закладці.<br>
+              2. На офіційній сторінці <a href="https://https://caniuse.com/" target="_blank">Can I Use</a> впишемо,
+              наприклад властивість "grid". <span class="red_block">Червоним</span> кольором будуть зазначені браузери
+              та їх версії, котрі не підтримують дану властивість.<span class="green_block">Зеленим</span> кольором
+              будуть зазначені браузери та їх версії, котрі повністю підтримують дану властивість. <span
+                class="olive_block">Оливковим</span> кольором будуть зазначені браузери та їх версії, котрі повністю
+              підтримують дану властивість з відповідним префіксом. Наприклад для IE Mobile 11 потрібно буде прописати
+              "display: -ms-grid;".
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Panel 5 -->
+      <div class="pr-tabs-panel tabs-panel" id="panel5">
+
+        <div class=" wrapper flex flex-wrap">
+          <div class="column pr-left-side-container large-6 medium-6 small-12 flex">
+            <img src="img/doineed.png" alt="-photo" class="pr-left-side-container__img">
+          </div>
+
+          <div class="column pr-right-side-container large-6 medium-6 small-12">
+            <span class="pr-right-side-container__number font-title">05.</span>
+            <h1 class="pr-right-side-container__title  font-title">В яких випадках використовувати префікси</h1>
+            <p class="pr-right-side-container__text ">Використовуйте їх, якщо браузери ще не підтримують версію без
+              префікса. Ви можете дізнатися, чи підтримує браузер його, відвідавши сайт, наприклад <a
+                href="https://https://caniuse.com/" target="_blank">Can I Use</a> або <a
+                href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">Mozilla MDN.</a></p>
+            <p>На жаль, для розробників браузери реалізують функції в різний час і в різних замовленнях, все з різним
+              рівнем підтримки. Це означає, що нам завжди потрібно знати поточні рівні реалізації для функцій, які ми
+              хочемо використовувати</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-    </main>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+
+  </main>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>

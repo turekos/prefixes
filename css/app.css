@@ -2,15 +2,19 @@
 .uppercase {
   text-transform: uppercase;
 }
+
 .font-title {
   font-family: "robotobold";
 }
+
 .font-text {
   font-family: "open_sansregular";
 }
+
 .border {
   border: 1px solid red;
 }
+
 .flex {
   display: -webkit-flex;
   display: -moz-flex;
@@ -18,40 +22,62 @@
   display: -o-flex;
   display: flex;
 }
+
 .flex-wrap {
   flex-wrap: wrap;
 }
+
 /* ------------------------------------------ */
 .pr-tabs,
 .pr-tabs-content {
   border: none;
 }
+
 body,
 .pr-tabs {
   background-color: #f4f4f4;
 }
+
+main {
+  padding: 0 2%;
+}
+
+h1 {
+  word-wrap: break-word;
+}
+
+h1,
+h2 {
+  line-height: 1;
+}
+
 /* ----------navigation------------------ */
 .pr-tabs {
   padding: 2% 0 2% 0;
 }
+
 .pr-tabs-title {
   padding: 0 1.5rem 0 1.5rem;
 }
+
 .pr-tabs-title a {
   color: #000000;
   font-weight: bold;
 }
 
-.pr-tabs-title > a:hover {
+.pr-tabs-title>a:hover {
   background: #f4f4f4;
   cursor: pointer;
 }
-.pr-tabs-title > a:focus,
-.tabs-title > a[aria-selected="true"] {
+
+.pr-tabs-title>a:focus,
+.tabs-title>a[aria-selected="true"] {
   background: #f4f4f4;
-  color: #fb527a; /*!!!!!!!!!!!!!!!!!змінити*/
+  color: #fb527a;
+  /*!!!!!!!!!!!!!!!!!змінити*/
   border-bottom: 4px solid #fb527a;
 }
+
 /* ------------------------------------------ */
 
 /* -------------tabs container style------------------- */
@@ -59,14 +85,16 @@ body,
   min-height: 500px;
   border-radius: 10px;
 }
+
 /* ---------------------------------------------------- */
 /* --------------tabs styles--------------------------- */
 .pr-tabs-panel {
   padding: 0;
 }
-.pr-right-side-container {
-  /* transition: 2s; */
-}
+
+/* .pr-right-side-container {
+   transition: 2s;
+} */
 
 .pr-left-side-container {
   justify-content: center;
@@ -88,28 +116,35 @@ body,
 .pr-right-sie-container_subtitle {
   /* font-size: 2em; */
 }
-.pr-right-side-container__title{
+
+.pr-right-side-container__title {
   line-height: 0.9;
 }
-p{
+
+p {
   text-indent: 10px;
 }
-.red_block{
-  color: rgb(196,65,45);
+
+.red_block {
+  color: rgb(196, 65, 45);
 }
-.green_block{
-  color: rgb(58,179,73);
+
+.green_block {
+  color: rgb(58, 179, 73);
 }
-.olive_block{
+
+.olive_block {
   color: rgb(137, 157, 0);
 }
+
 /* ------------------------------------------------------- */
 @media screen and (max-width: 39.99875em) {
-  .pr-left-side-container__img{
+  .pr-left-side-container__img {
     margin-top: 10%;
   }
+
   .pr-right-side-container,
-  .pr-left-side-container{
-   min-height: 200px;
+  .pr-left-side-container {
+    min-height: 200px;
   }
- 
+}
